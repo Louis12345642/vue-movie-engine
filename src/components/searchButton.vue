@@ -109,7 +109,7 @@ button{
     border-style:none;
     border-radius:25px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-    font-size:15px;
+    font-size:25px;
     font-weight: 400;
     
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

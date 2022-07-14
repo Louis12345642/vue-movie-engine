@@ -25,12 +25,15 @@ img{
     position: relative;
 }
 .detail{
+    font-size:25px;
     z-index:1;
     position: absolute;
     top:200px;
     opacity:.8;
     line-height:1.6em;
     background-color:#0e002c;
+    
+    font-family: 'Roboto', sans-serif;
     
     height:100px;
     width: 100%;
