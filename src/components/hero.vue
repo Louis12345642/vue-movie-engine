@@ -4,8 +4,7 @@
          <img src="https://m.media-amazon.com/images/M/MV5BNTZiMGM5MjItY2VjMi00NmE0LWFlMDItYjA4MzEzMjI4Y2Y2XkEyXkFqcGdeQXVyODA1NjQ0OTY@._V1_SX300.jpg" alt="john wick loading">
 
          <div class="detail">
-       <p>Retro Wick: Exploring the Unexpected Success of 'John Wic
-       </p>
+       <p>Retro Wick: Exploring the Unexpected Success of 'John Wic </p>
 
          </div>
     </div>
