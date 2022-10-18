@@ -13,6 +13,8 @@
 
 </template>
 <script>
+     
+    // require('dotenv').config
     import movie from './movie.vue'
 export default{
     name:"seachButton",

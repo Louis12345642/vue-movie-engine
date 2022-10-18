@@ -1,8 +1,10 @@
 <template>
     <section>
-    <div>
+    
+<router-link :to="{name:'movie',params:{id:movie.imdbID}}">
+
     <div  class="movie-wrapper">
-         <div  @click="detail(movie.imdbID)"  class="movie-card">
+        <div class="movie-card">
    <div class="image">
     <img class="image-tag" v-bind:src="movie.Poster" alt="loading image ">
    
@@ -17,8 +19,9 @@
         </p>
      </div>
     </div>
-    </div>
-    </div>
+</div>
+
+</router-link>
 </section>
 </template>
 <script>
@@ -31,21 +34,16 @@ props:['myMovies'],
         const movie=prop.myMovies
       function detail(id){
         console.log(id)
-      showDetails=true
+     
         fetch(`http://www.omdbapi.com/?apikey=${this.apiKey}&i=${id}`)
            .then(res=>res.json())
            .then((data)=>{
-            console.log(data)
-            
-            
            });
     }
 
-    return{
-        detail,
-        movie,
-        showDetails
 
+    return{
+        movie
     }
     }
 }
@@ -53,8 +51,7 @@ props:['myMovies'],
 <style>
 .movie-wrapper{
       display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    
+     grid-template-columns: 1fr 1fr 1fr;
 }
 .movie-card{
     background-color: #0f1538;
@@ -100,6 +97,7 @@ props:['myMovies'],
     text-align: center;
     font-family: 'Roboto Mono';
     padding: 5px;
+    margin-top: 50px;
 
 }
 </style>

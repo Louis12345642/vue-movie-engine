@@ -1,41 +1,20 @@
 <template>
-    <section>
-        <nav>
-            <h2 style="color:white"><span class="movie-text">MOVIE</span>Engine</h2>
-        </nav>
-    </section>
+    <nav class="first-container nav">
+        <section class="nav-bar">
+        
+          <section class="dots-wrapper">
+            <div id="red" class="circle"></div>
+            <div id="yellow" class="circle"></div>
+            <div id="green" class="circle"></div>
+          </section>
+          <!-- these are the circles -->
+         <router-link to="/"> <section><h1 class="logo"><span class="green-head">MOVIE</span> <span class="white-head">ENGINE</span></h1></section></router-link>
+        </section>
+    </nav>
+        
+    
 </template>
 <script>
 </script>
-
 <style>
-*{
-    margin:0;
-    padding: 0;
-}
-body{
-    background-color:#21172c;
-}
-nav{
-    display:flex;
-    align-content:center;
-    justify-content: center;
-    background-color: #14443b;
-    height:50px;
-    border-bottom: 4px solid #37dd76;
-}
-h2{
-    margin-top:10px;
-    font-family: 'Roboto Mono';
-    font-size:20px;
-    font-weight: 500;
-}
-.movie-text{
-    color: #37dd76;
-    margin:10px;
-    font-family:'chunckfive'
-    
-}
-
-
 </style>
